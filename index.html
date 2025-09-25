@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noelia Krystal — Portafolio de Fotografía</title>
+  <meta name="description" content="Portafolio de fotografía — Bodas, Retratos y Eventos en Puerto Rico." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#fafafa; --fg:#0f0f0f; --muted:#666; --card:#fff; --line:#eaeaea; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg);}
+    a{color:inherit;text-decoration:none}
+    header{position:sticky;top:0;background:#ffffffcc;backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--line)}
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+    .nav a{font-size:14px;margin-left:16px;opacity:.85}
+    .btn{display:inline-block;padding:10px 14px;border-radius:999px;border:1px solid var(--fg)}
+    .hero{padding:72px 0;background:linear-gradient(180deg,#fff,transparent)}
+    .h1{font-size:44px;line-height:1.05;margin:0 0 10px}
+    .sub{color:var(--muted);margin:0 0 24px}
+    .grid{display:grid;gap:16px}
+    @media(min-width:640px){ .grid-cols-3{grid-template-columns:repeat(3,1fr)} }
+    @media(max-width:639px){ .grid-cols-3{grid-template-columns:1fr 1fr} }
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+    .card img{width:100%;height:260px;object-fit:cover;display:block}
+    .card .cap{padding:10px 12px;font-size:13px;color:var(--muted)}
+    section{padding:48px 0}
+    h2{font-size:28px;margin:0 0 16px}
+    .two{display:grid;gap:24px}
+    @media(min-width:900px){ .two{grid-template-columns:1fr 1fr} }
+    .list{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+    .pill{display:inline-block;padding:8px 12px;border:1px solid var(--line);border-radius:999px;margin-right:8px;font-size:13px;color:var(--muted)}
+    footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:14px}
+    .cta{display:inline-block;padding:10px 14px;border-radius:12px;background:#111;color:#fff}
+    .note{font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <strong>Noelia Krystal Photo</strong>
+    <nav>
+      <a href="#trabajos">Trabajos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto" class="btn">Reserva</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="h1">Historias reales, imágenes que perduran.</h1>
+      <p class="sub">Bodas · Retratos · Eventos — Puerto Rico</p>
+      <a class="cta" href="#trabajos">Ver portafolio</a>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="trabajos">
+    <div class="container">
+      <h2>Trabajos destacados</h2>
+      <div class="grid grid-cols-3">
+        <!-- Sube tus fotos a la carpeta /images y cambia los src de abajo -->
+        <div class="card"><img src="images/boda-1.jpg" alt="Boda — atardecer"><div class="cap">Boda</div></div>
+        <div class="card"><img src="images/retrato-1.jpg" alt="Retrato editorial"><div class="cap">Retrato</div></div>
+        <div class="card"><img src="images/evento-1.jpg" alt="Evento corporativo"><div class="cap">Evento</div></div>
+        <div class="card"><img src="images/boda-2.jpg" alt="First look"><div class="cap">Boda</div></div>
+        <div class="card"><img src="images/retrato-2.jpg" alt="Beauty luz natural"><div class="cap">Retrato</div></div>
+        <div class="card"><img src="images/evento-2.jpg" alt="Concierto"><div class="cap">Evento</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="container">
+      <h2>Servicios</h2>
+      <ul class="list">
+        <li><strong>Bodas:</strong> cobertura completa desde preparativos hasta fiesta. <span class="pill">Desde $1,500</span></li>
+        <li><strong>Retratos:</strong> book personal, branding o editorial (styling y locación). <span class="pill">Desde $250</span></li>
+        <li><strong>Eventos:</strong> cobertura por horas. Opciones con video/BTS. <span class="pill">Desde $180/h</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section id="sobre-mi">
+    <div class="container two">
+      <img src="images/yo.jpg" alt="Noelia" style="width:100%;height:360px;object-fit:cover;border-radius:16px;border:1px solid var(--line)">
+      <div>
+        <h2>Sobre mí</h2>
+        <p>Soy Noelia, fotógrafa en Puerto Rico. Me inspiran la luz natural, las emociones honestas y los colores vibrantes del Caribe. Mi misión es narrar tu historia con imágenes limpias, elegantes y atemporales.</p>
+        <p class="note">Instagram: <a href="https://instagram.com/tuusuario" target="_blank">@tuusuario</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="container two">
+      <div>
+        <h2>¿Listas/os para crear algo hermoso?</h2>
+        <p>Escríbeme y cuéntame del evento o sesión que sueñas. Respondo en 24 horas.</p>
+        <p><a class="btn" href="mailto:hola@tumarca.com">hola@tumarca.com</a></p>
+        <p><a class="btn" href="tel:+17870000000">+1 (787) 000-0000</a></p>
+      </div>
+      <form action="mailto:hola@tumarca.com" method="post" enctype="text/plain" style="display:grid;gap:12px">
+        <input required placeholder="Nombre" style="padding:10px;border:1px solid var(--line);border-radius:10px">
+        <input required type="email" placeholder="Email" style="padding:10px;border:1px solid var(--line);border-radius:10px">
+        <select style="padding:10px;border:1px solid var(--line);border-radius:10px">
+          <option>Tipo de sesión</option><option>Retrato</option><option>Boda</option><option>Evento</option>
+        </select>
+        <textarea rows="5" placeholder="Cuéntame los detalles (fecha, lugar, idea)" style="padding:10px;border:1px solid var(--line);border-radius:10px"></textarea>
+        <button class="cta" type="submit">Enviar propuesta</button>
+        <p class="note">También puedes escribirme directo a hola@tumarca.com</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">© <span id="y"></span> Noelia Krystal Photo — Hecho con cariño en Puerto Rico.</div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
